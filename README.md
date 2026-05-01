@@ -4,7 +4,7 @@ A small interactive TUI to manage Espanso shortcodes on **Linux**.
 Overview
 --------
 
-`esc` is a lightweight interactive script that helps you add, list, and remove Espanso shortcodes from your Espanso `esc.yml` matches file. It's designed to be simple, POSIX-compatible, and safe to use from a terminal.
+`span` is a lightweight interactive script that helps you add, list, and remove Espanso shortcodes from your Espanso `span.yml` matches file. It's designed to be simple, POSIX-compatible, and safe to use from a terminal.
 
 Requirements
 ------------
@@ -15,10 +15,10 @@ Requirements
 Install
 -------
 
-Run the command below, or install the `esc` package manually.
+Run the command below, or install the `span` package manually.
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/pptoolbox/esc/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/pptoolbox/span/main/install.sh)"
 ```
 
 Usage
@@ -27,7 +27,7 @@ Usage
 Run the script from a terminal:
 
 ```bash
-esc
+span
 ```
 
 When launched you'll see a simple menu to:
@@ -38,7 +38,7 @@ When launched you'll see a simple menu to:
 Emoji Support
 -----
 
-`esc` comes with a pre-loaded emoji shortcode library (`emoji.yml`) that provides quick access to hundreds of emojis using text triggers. Instead of copying/pasting emojis, you can use simple text shortcuts.
+`span` comes with a pre-loaded emoji shortcode library (`emoji.yml`) that provides quick access to hundreds of emojis using text triggers. Instead of copying/pasting emojis, you can use simple text shortcuts.
 
 **Emoji triggers start with a dot (`.`)**
 
@@ -74,7 +74,7 @@ Behavior notes
 
 - When adding a shortcode the script will initialize `matches: []` if no matches are present.
 - Deleting a shortcode removes the matching entry and will restore `matches: []` when no matches remain.
-- The script edits your Espanso YAML in-place; consider backing up `esc.yml` before bulk changes.
+- The script edits your Espanso YAML in-place; consider backing up `span.yml` before bulk changes.
 
 Examples
 --------
@@ -82,7 +82,7 @@ Examples
 Add a new shortcode (interactive):
 
 ```bash
-esc
+span
 # choose: 1) Add new shortcode
 # trigger: email
 # replacement: you@example.com
